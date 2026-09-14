@@ -1,0 +1,71 @@
+.theme-toggle{
+  position:absolute;
+  top:20px;
+  right:20px;
+  z-index:3;
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.82);
+  color:var(--ink);
+  border-radius:999px;
+  padding:8px 11px;
+  font-size:12px;
+  font-weight:800;
+  cursor:pointer;
+  backdrop-filter:blur(8px);
+}
+.theme-toggle:hover{transform:translateY(-1px)}
+
+html[data-theme="dark"]{color-scheme:dark;--ink:#f0eee9;--muted:#b5bdb9;--paper:#202724;--bg:#151a18;--line:#3a4541;--rose:#d58b8e;--rose2:#4a3034;--sage:#9db5a4;--sage2:#2b3932;--plum:#c59ab9;--cream:#332d25;--white:#232a27;--shadow:0 12px 30px rgba(0,0,0,.28)}
+html[data-theme="dark"] body{background:linear-gradient(135deg,#161b19 0%,#201a1b 48%,#17201c 100%)}
+html[data-theme="dark"] .hero{background:rgba(31,38,35,.94)}
+html[data-theme="dark"] .hero:after{background:radial-gradient(circle,rgba(201,117,120,.18),transparent 68%)}
+html[data-theme="dark"] .theme-toggle{background:rgba(39,47,43,.9);border-color:#4a5752;color:#f2efeb}
+html[data-theme="dark"] .pill{background:#332d25;border-color:#55483a;color:#eadfce}
+html[data-theme="dark"] .side{background:#252d2a}
+html[data-theme="dark"] .bar{background:#3c4843}
+html[data-theme="dark"] .nav{color:#ced8d3}
+html[data-theme="dark"] .nav:hover,html[data-theme="dark"] .nav.active{background:#46524e;color:#fff}
+html[data-theme="dark"] .side-note{color:#9facA7}
+html[data-theme="dark"] .card{background:#202724}
+html[data-theme="dark"] .bubble{background:#4a3034;color:#f0b9bc}
+html[data-theme="dark"] .why{background:#36292b;color:#e8cfd1}
+html[data-theme="dark"] .tip{background:#2b3932;color:#cbd9d0}
+html[data-theme="dark"] .tip strong{color:#eef4f0}
+html[data-theme="dark"] .example{background:#342f27;border-color:#514839;color:#e5d5bc}
+html[data-theme="dark"] .choice{background:#252d2a;color:#d8dfdc;border-color:#44504b}
+html[data-theme="dark"] .choice:hover{background:#35292b;border-color:#8f626e}
+html[data-theme="dark"] textarea,html[data-theme="dark"] input[type=text],html[data-theme="dark"] select{background:#171d1b;border-color:#43504b;color:#f1efeb}
+html[data-theme="dark"] textarea::placeholder,html[data-theme="dark"] input::placeholder{color:#818d88}
+html[data-theme="dark"] .secondary{background:#252d2a;border-color:#46534e;color:#eef1ef}
+html[data-theme="dark"] .helpbox{background:#2b2722;border-color:#4e4438}
+html[data-theme="dark"] .helpbox textarea{background:#171d1b}
+html[data-theme="dark"] .brand-guide{background:#1a211e}
+html[data-theme="dark"] .summaryText{background:#191f1d;color:#d7ddda}
+html[data-theme="dark"] .canvaNum{background:#324138;color:#dce9df}
+html[data-theme="dark"] .checklist label{color:#d5ddda}
+html[data-theme="dark"] .quote{color:#e1bdc8;border-left-color:#a66d72}
+html[data-theme="dark"] .oceanNote{background:linear-gradient(135deg,#22312d,#34282a);border-color:#3a4a44}
+html[data-theme="dark"] .oceanNote h3{color:#d8e7e0}
+html[data-theme="dark"] .oceanNote p{color:#c1ceca}
+html[data-theme="dark"] .oceanRule{color:#e5b9ca}
+html[data-theme="dark"] .reveal{background:linear-gradient(145deg,#2f2526,#22302a);border-color:#3e4945}
+html[data-theme="dark"] .reveal .name{color:#e4c5d3}
+html[data-theme="dark"] .reveal .descriptor{color:#bdc7c3}
+html[data-theme="dark"] .revealCard{background:rgba(29,36,33,.88);border-color:#414b47}
+html[data-theme="dark"] .revealCard span{color:#eef1ef}
+html[data-theme="dark"] .downloadCard{background:#1b221f}
+html[data-theme="dark"] .plainPreview{background:#171d1b;color:#dce3df}
+html[data-theme="dark"] .canvaCallout{background:#242d38;border-color:#3d4c5f;color:#cdd8e7}
+html[data-theme="dark"] .saveNote{background:#202724;color:#bec7c3}
+
+@media(max-width:600px){
+  .theme-toggle{position:relative;top:auto;right:auto;margin:0 0 14px auto;display:flex}
+}
+
+@media print{
+  .theme-toggle{display:none!important}
+  html[data-theme="dark"] body{background:#fff!important;color:#263238!important}
+}
