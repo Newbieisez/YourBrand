@@ -5,7 +5,7 @@
     'Who You’re Here For',
     'Find Your Voice',
     'Choose Your Look',
-    'Build It in Canva',
+    'Build Your Visual Brand',
     'Shape Your Message',
     'Create With AI',
     'Your Brand Guide'
