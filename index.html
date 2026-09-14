@@ -7,13 +7,16 @@
 <meta name="description" content="A guided personal-brand experience from EZ Enablement to help you define how you want to show up, communicate, be remembered, and express that consistently." />
 <link rel="stylesheet" href="styles.css" />
 <link rel="stylesheet" href="mobile.css" />
+<link rel="stylesheet" href="theme.css" />
 <link rel="stylesheet" href="legal.css" />
+<script src="theme.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
 </head>
 <body>
 <div class="wrap">
   <header class="hero">
+    <button id="themeToggle" class="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to dark mode" onclick="toggleYourBrandTheme()">☾ <span>Dark</span></button>
     <div class="kicker">A gentle, practical personal-brand guide</div>
     <h1>Define how you want to show up—and be remembered.</h1>
     <p>Your personal brand is not a logo or a color palette. It is the impression people carry away from you: what you stand for, how you communicate, what you want to be known for, and how you choose to express it. This guide helps you make those choices intentionally.</p>
