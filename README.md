@@ -13,11 +13,13 @@ A beginner-friendly guided web experience for discovering and building a persona
 7. Create With AI — how to use AI as a collaborator without losing your voice
 8. Meet Your Brand — personalized brand reveal and downloadable files
 
-## Privacy in V1
+## Privacy in the current version
 
-The current version does not require an account. Answers are saved in the visitor's own browser using localStorage. Progress therefore stays on that browser/device unless browser data is cleared.
+The current version does not require an account. Each browser tab/session gets a private workspace. Brand answers are stored in session-scoped browser storage and are not intentionally reused for a new visitor. Legacy shared browser data is removed during startup.
 
-Downloads are generated in the browser from the visitor's answers. V1 does not send those answers to a database.
+Closing the browser session or choosing **Start a fresh brand** clears the active workspace from view. Personalized downloads are generated in the browser from that session's answers.
+
+This is intentionally a privacy-first V1. Cross-device persistence should only be added with authenticated per-user storage and server-side authorization.
 
 ## Personalized downloads
 
@@ -35,6 +37,10 @@ AI is treated as a collaborator, not the creative authority. The core rule throu
 
 > If something does not feel like you, it is not finished yet.
 
+## Mobile experience
+
+On mobile, the step navigation becomes a sticky horizontal navigation strip. Selecting a step scrolls directly to that step rather than returning the visitor to the top of the page.
+
 ## Local preview
 
 Because the page loads each step as a small HTML fragment, preview it through a local web server rather than opening `index.html` directly from the filesystem.
@@ -49,4 +55,4 @@ Then open `http://localhost:8000`.
 
 ## Deployment
 
-The repository includes a GitHub Pages workflow under `.github/workflows/pages.yml`. Every push to `main` attempts to publish the current static site.
+Production hosting is intended for Cloudflare under `yourbrand.its-ez.com`. GitHub is the source of truth for the application code.
