@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Find Your Brand - Guided Brand Builder</title>
+<link rel="stylesheet" href="styles.css" />
+<script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <div class="kicker">A gentle, practical brand-building guide</div>
+    <h1>Find the brand that already feels like you.</h1>
+    <p>You do not need to become louder, trendier, or more “professional” to have a strong brand. This guide helps you uncover what is already true about you, shape it with intention, and turn it into a clear voice and visual identity you can actually use.</p>
+    <div class="reassure"><span class="pill">No design experience needed</span><span class="pill">No marketing jargon</span><span class="pill">No perfect answers required</span><span class="pill">Use AI as a helper, not your personality</span></div>
+  </header>
+
+  <div class="layout">
+    <aside class="side">
+      <div class="progress"><b id="progressText">0% complete</b><div class="bar"><i id="progressBar"></i></div></div>
+      <button class="nav active" data-step="0">Welcome</button>
+      <button class="nav" data-step="1">1. Find Your Center</button>
+      <button class="nav" data-step="2">2. Who You’re Here For</button>
+      <button class="nav" data-step="3">3. Find Your Voice</button>
+      <button class="nav" data-step="4">4. Choose Your Look</button>
+      <button class="nav" data-step="5">5. Build It in Canva</button>
+      <button class="nav" data-step="6">6. Shape Your Message</button>
+      <button class="nav" data-step="7">7. Create With AI</button>
+      <button class="nav" data-step="8">8. Your Brand Guide</button>
+      <div class="side-note">Your answers save automatically on this device. You can stop and come back later.</div>
+    </aside>
+    <main id="panels"><div class="card"><p class="lead">Loading your brand guide…</p></div></main>
+  </div>
+</div>
+<script src="boot.js"></script>
+</body>
+</html>
