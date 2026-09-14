@@ -6,7 +6,7 @@ const PRIVATE_SESSION_KEY='yourbrand_private_session_v1';
   const nativeSet=Storage.prototype.setItem;
   const nativeRemove=Storage.prototype.removeItem;
 
-  // Remove any legacy persistent answers so a new visitor can never inherit them.
+  // Remove legacy persistent answers. Every browser tab/session starts private.
   try{nativeRemove.call(window.localStorage,APP_STORAGE_KEY)}catch(e){}
 
   Storage.prototype.getItem=function(key){
@@ -31,7 +31,7 @@ const PRIVATE_SESSION_KEY='yourbrand_private_session_v1';
   };
 
   window.startFreshBrandWorkspace=function(){
-    const ok=window.confirm('Start a fresh private brand? This will clear the answers in this browser tab. Download anything you want to keep first.');
+    const ok=window.confirm('Start a fresh private brand? This clears the answers in this browser tab. Download anything you want to keep first.');
     if(!ok)return;
     try{nativeRemove.call(window.sessionStorage,PRIVATE_SESSION_KEY)}catch(e){}
     window.location.reload();
@@ -44,6 +44,11 @@ Promise.all(panelFiles.map(f=>fetch(f).then(r=>{if(!r.ok) throw new Error(`Could
     document.getElementById('panels').innerHTML=parts.join('\n');
     const s=document.createElement('script');
     s.src='app.js';
+    s.onload=()=>{
+      const mobile=document.createElement('script');
+      mobile.src='mobile-nav.js';
+      document.body.appendChild(mobile);
+    };
     document.body.appendChild(s);
   })
   .catch(()=>{document.getElementById('panels').innerHTML='<div class="card"><h2>We could not load the guide.</h2><p>Please refresh the page. If the problem continues, try again in a moment.</p></div>';});
