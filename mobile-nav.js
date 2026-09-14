@@ -5,9 +5,9 @@
     'Who You’re Here For',
     'Find Your Voice',
     'Choose Your Look',
-    'Build Your Visual Brand',
     'Shape Your Message',
     'Create With AI',
+    'Build Your Visual Brand',
     'Your Brand Guide'
   ];
   const LAST_STEP_KEY='yourbrand_last_step_v1';
@@ -127,8 +127,6 @@
     button.onclick=()=>showStep(+button.dataset.step);
   });
 
-  // Refreshing the same visit should put the user back where they were.
-  // A true return visit is handled by the lightweight Continue / Start new gate.
   if(!window.__yourBrandResumePending && initialStep>0){
     requestAnimationFrame(()=>showStep(initialStep));
   }
