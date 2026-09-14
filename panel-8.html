@@ -1,27 +1,29 @@
 <section class="panel" data-panel="8">
         <div class="card">
-          <div class="step"><div class="bubble">✓</div><div><h2>Meet Your Brand</h2><p class="lead">This is not a grade or a final answer. It is the clearest picture of your brand based on what you know today.</p></div></div>
+          <div class="step"><div class="bubble">✓</div><div><h2>Meet Your Personal Brand</h2><p class="lead">This is not a logo reveal or a finished identity package. It is a clear picture of how you want to show up, what you want to stand for, how you naturally communicate, who you want to reach, and what you want people to remember about you.</p></div></div>
           <div class="reveal">
-            <div class="name" id="revealName">Your Brand</div>
-            <div class="descriptor" id="revealLine">A brand built from what is true about you.</div>
+            <div class="name" id="revealName">Your Personal Brand</div>
+            <div class="descriptor" id="revealLine">A personal brand built from what is true about you.</div>
             <div class="revealGrid">
               <div class="revealCard"><b>You want people to feel</b><span id="revealFeel">—</span></div>
               <div class="revealCard"><b>You believe</b><span id="revealBelief">—</span></div>
               <div class="revealCard"><b>Your voice feels</b><span id="revealVoice">—</span></div>
-              <div class="revealCard"><b>Your visual world feels</b><span id="revealVisual">—</span></div>
+              <div class="revealCard"><b>Your visual expression feels</b><span id="revealVisual">—</span></div>
               <div class="revealCard"><b>You are here for</b><span id="revealAudience">—</span></div>
               <div class="revealCard"><b>You want to be known for</b><span id="revealKnown">—</span></div>
             </div>
           </div>
 
-          <div class="tip"><strong>Your brand can keep growing with you.</strong> Come back whenever something changes. Your progress will still be here in this browser on this device unless you start fresh or clear browser data.</div>
+          <div class="why"><strong>The most important part is not the colors or the logo.</strong><p style="margin:7px 0 0">Your personal brand is the consistent impression you create through what you say, what you do, how you communicate, what you stand for, and how you choose to present yourself. The visual pieces simply help reinforce that impression.</p></div>
 
-          <div class="downloadTitle">Your personalized Brand Kit is ready</div>
-          <p class="lead">Everything below is built from your answers. The easiest option is to download the complete kit once and keep the files together.</p>
+          <div class="tip"><strong>Your personal brand can keep growing with you.</strong> Come back whenever something changes. Your progress will still be here in this browser on this device unless you start fresh or clear browser data.</div>
+
+          <div class="downloadTitle">Your personalized Personal Brand Kit is ready</div>
+          <p class="lead">Everything below is built from your answers. Think of these files as working references for how you want to show up consistently—not as a finished logo or design package.</p>
 
           <div class="why" style="margin-top:18px">
             <strong>Before you download</strong>
-            <p style="margin:7px 0 10px">This app gives you creative and educational guidance. You are responsible for reviewing anything you use or publish, including AI suggestions, Canva assets, names, claims, trademarks, and other brand decisions.</p>
+            <p style="margin:7px 0 10px">This app gives you creative and educational guidance. You are responsible for reviewing anything you use or publish, including AI suggestions, design assets, names, claims, trademarks, and other brand decisions.</p>
             <label style="display:flex;gap:9px;align-items:flex-start;font-weight:700;cursor:pointer">
               <input id="downloadAck" type="checkbox" style="margin-top:4px" onchange="document.querySelectorAll('[data-download]').forEach(b=>b.disabled=!this.checked)">
               <span>I understand that I am responsible for how I use these materials and I agree to the <a href="terms.html" target="_blank" rel="noopener">Terms &amp; Disclaimer</a>.</span>
@@ -30,20 +32,20 @@
 
           <div class="downloadAll">
             <div>
-              <strong>Download My Complete Brand Kit</strong>
+              <strong>Download My Complete Personal Brand Kit</strong>
               <p>One ZIP with 5 personalized PDFs plus a START HERE guide explaining what each file is for and how to use it.</p>
             </div>
-            <button data-download disabled class="btn big" style="background:#fff;color:#74586f" onclick="downloadEverything()">Download my Brand Kit</button>
+            <button data-download disabled class="btn big" style="background:#fff;color:#74586f" onclick="downloadEverything()">Download my Personal Brand Kit</button>
           </div>
 
           <div class="downloadTitle" style="font-size:18px">What is inside?</div>
           <div class="downloads">
-            <div class="downloadCard"><strong>01 · My Brand Guide — PDF</strong><p>Your complete brand foundation: audience, beliefs, message, positioning, and the decisions that keep your brand consistent.</p><p><b>Use it for:</b> your website, briefing a designer or marketer, and checking whether something feels on-brand.</p><button data-download disabled class="btn secondary full" onclick="downloadPDF('brand')">Download this file only</button></div>
+            <div class="downloadCard"><strong>01 · My Personal Brand Guide — PDF</strong><p>Your foundation: who you want to reach, what you believe, what you want to be known for, your message, and the choices that help you show up consistently.</p><p><b>Use it for:</b> your website, LinkedIn, introductions, speaking, networking, briefing collaborators, or checking whether something feels like you.</p><button data-download disabled class="btn secondary full" onclick="downloadPDF('brand')">Download this file only</button></div>
             <div class="downloadCard"><strong>02 · My Brand Voice Guide — PDF</strong><p>How you naturally communicate, the language that sounds like you, and the styles you want to avoid.</p><p><b>Use it for:</b> emails, social posts, presentations, website copy, or anyone writing on your behalf.</p><button data-download disabled class="btn secondary full" onclick="downloadPDF('voice')">Download this file only</button></div>
-            <div class="downloadCard"><strong>03 · My Canva Brand Plan — PDF</strong><p>Your visual direction, colors, fonts, image style, Canva setup, and practical next steps.</p><p><b>Use it for:</b> building your Canva Brand Kit, Brand Home, mood board, and reusable templates.</p><button data-download disabled class="btn secondary full" onclick="downloadPDF('canva')">Download this file only</button></div>
-            <div class="downloadCard"><strong>04 · My AI Writing Guide — PDF</strong><p>Your brand information organized so an AI assistant has real context about your voice, audience, beliefs, and boundaries.</p><p><b>Use it for:</b> ChatGPT, Claude, Gemini, or another AI tool when you want help creating without losing your voice.</p><button data-download disabled class="btn secondary full" onclick="downloadPDF('ai')">Download this file only</button></div>
+            <div class="downloadCard"><strong>03 · My Visual Direction Plan — PDF</strong><p>Your supporting visual direction: colors, fonts, image style, and practical ways to organize those choices.</p><p><b>Use it for:</b> Canva, Google Slides, PowerPoint, a designer, or anywhere you need to present yourself consistently.</p><button data-download disabled class="btn secondary full" onclick="downloadPDF('canva')">Download this file only</button></div>
+            <div class="downloadCard"><strong>04 · My AI Writing Guide — PDF</strong><p>Your personal-brand information organized so an AI assistant has real context about your voice, audience, beliefs, and boundaries.</p><p><b>Use it for:</b> ChatGPT, Claude, Gemini, or another AI tool when you want help creating without losing your voice.</p><button data-download disabled class="btn secondary full" onclick="downloadPDF('ai')">Download this file only</button></div>
             <div class="downloadCard"><strong>05 · My Content Starter Map — PDF</strong><p>Personalized directions for what you can teach, share, explain, challenge, and talk about.</p><p><b>Use it for:</b> those moments when you do not know what to post, write, teach, or create next.</p><button data-download disabled class="btn secondary full" onclick="downloadPDF('content')">Download this file only</button></div>
-            <div class="downloadCard"><strong>Printable Brand Summary</strong><p>A quick copy of the full experience you can print or save from your browser.</p><p><b>Use it for:</b> keeping a reference beside you while you create or review your work.</p><button data-download disabled class="btn secondary full" onclick="window.print()">Print / save a copy</button></div>
+            <div class="downloadCard"><strong>Printable Personal Brand Summary</strong><p>A quick copy of the full experience you can print or save from your browser.</p><p><b>Use it for:</b> keeping a reference beside you while you create or review your work.</p><button data-download disabled class="btn secondary full" onclick="window.print()">Print / save a copy</button></div>
           </div>
 
           <div class="saveNote">✓ Your answers and progress are saved in this browser on this device</div>
