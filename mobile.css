@@ -1,0 +1,38 @@
+@media (max-width: 860px){
+  .wrap{padding:10px 10px 48px}
+  .hero{padding:22px 18px;border-radius:20px;margin-bottom:10px}
+  .hero h1{font-size:32px;line-height:1.08}
+  .hero p{font-size:15px}
+
+  .layout{display:block}
+  .side{
+    position:sticky;
+    top:0;
+    z-index:50;
+    display:flex;
+    align-items:center;
+    gap:6px;
+    overflow-x:auto;
+    overscroll-behavior-inline:contain;
+    scrollbar-width:none;
+    border-radius:0 0 16px 16px;
+    margin:0 -10px 14px;
+    padding:9px 10px;
+    box-shadow:0 8px 22px rgba(28,38,35,.16);
+  }
+  .side::-webkit-scrollbar{display:none}
+  .progress{flex:0 0 110px;min-width:110px;padding:4px 5px;color:#e8efeb}
+  .bar{height:5px;margin-top:4px}
+  .nav{width:auto;flex:0 0 auto;white-space:nowrap;margin:0;padding:9px 11px}
+  .side-note,.fresh-workspace{display:none!important}
+
+  .panel{scroll-margin-top:92px}
+  .card{padding:19px 17px;border-radius:18px}
+  .card h2{font-size:25px}
+  .grid2,.grid3,.identityRow,.revealGrid,.downloads{grid-template-columns:1fr}
+  textarea{min-height:124px}
+  .footerNav{gap:10px}
+  .footerNav .btn{flex:1}
+  .downloadAll{align-items:flex-start;flex-direction:column}
+  .downloadAll .btn{width:100%}
+}
