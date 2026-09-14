@@ -10,6 +10,7 @@
     'Create With AI',
     'Your Brand Guide'
   ];
+  const LAST_STEP_KEY='yourbrand_last_step_v1';
 
   const side=document.querySelector('.side');
   if(!side)return;
@@ -100,6 +101,7 @@
     document.querySelectorAll('.nav').forEach(x=>x.classList.toggle('active',+x.dataset.step===n));
     if(n===8 && typeof window.renderGuide==='function')window.renderGuide();
 
+    try{localStorage.setItem(LAST_STEP_KEY,String(n))}catch(e){}
     updateMobileState(n);
     if(isMobile())closeMenu();
 
@@ -115,10 +117,19 @@
   }
 
   buildMobileNavigation();
-  updateMobileState(0);
+
+  let initialStep=0;
+  try{initialStep=Math.max(0,Math.min(8,Number(localStorage.getItem(LAST_STEP_KEY))||0))}catch(e){}
+  updateMobileState(initialStep);
 
   window.go=showStep;
   document.querySelectorAll('.nav').forEach(button=>{
     button.onclick=()=>showStep(+button.dataset.step);
   });
+
+  // Refreshing the same visit should put the user back where they were.
+  // A true return visit is handled by the lightweight Continue / Start new gate.
+  if(!window.__yourBrandResumePending && initialStep>0){
+    requestAnimationFrame(()=>showStep(initialStep));
+  }
 })();
