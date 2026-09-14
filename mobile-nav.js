@@ -4,11 +4,11 @@
     'Find Your Center',
     'Who You’re Here For',
     'Find Your Voice',
-    'Choose Your Look',
+    'Choose Your Visual Direction',
     'Shape Your Message',
     'Create With AI',
-    'Build Your Visual Brand',
-    'Your Brand Guide'
+    'Put It Into Practice',
+    'Your Personal Brand Guide'
   ];
   const LAST_STEP_KEY='yourbrand_last_step_v1';
 
@@ -80,7 +80,7 @@
     const nextTitle=document.getElementById('mobileNextTitle');
     const nextButton=document.getElementById('mobileNextButton');
 
-    if(title)title.textContent=steps[n]||'Your Brand Journey';
+    if(title)title.textContent=steps[n]||'Your Personal Brand Journey';
     if(count)count.textContent=n===0?'Start here':`Step ${n} of 8`;
 
     const nextStep=n<8?n+1:0;
