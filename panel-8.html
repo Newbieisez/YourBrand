@@ -14,10 +14,10 @@
             </div>
           </div>
 
-          <div class="tip"><strong>Your brand can keep growing with you.</strong> Come back whenever something changes. Your answers are saved on this device automatically.</div>
+          <div class="tip"><strong>Your brand can keep growing with you.</strong> Come back whenever something changes. Your current private session stays separate from another visitor's session.</div>
 
-          <div class="downloadTitle">Take your brand with you</div>
-          <p class="lead">Each download is created from your answers—not a generic workbook.</p>
+          <div class="downloadTitle">Your personalized Brand Kit is ready</div>
+          <p class="lead">Everything below is built from your answers. The easiest option is to download the complete kit once and keep the files together.</p>
 
           <div class="why" style="margin-top:18px">
             <strong>Before you download</strong>
@@ -28,16 +28,25 @@
             </label>
           </div>
 
-          <div class="downloads">
-            <div class="downloadCard"><strong>My Brand Guide</strong><p>Your purpose, audience, message, beliefs, look, and core decisions in one place.</p><button data-download disabled class="btn primary full" onclick="downloadPDF('brand')">Download my guide</button></div>
-            <div class="downloadCard"><strong>My Brand Voice Guide</strong><p>How you naturally sound, what to preserve, what to avoid, and how to stay human.</p><button data-download disabled class="btn primary full" onclick="downloadPDF('voice')">Download my voice guide</button></div>
-            <div class="downloadCard"><strong>My Canva Plan</strong><p>Your visual direction, colors, fonts, image style, Canva checklist, and next steps.</p><button data-download disabled class="btn primary full" onclick="downloadPDF('canva')">Download my Canva plan</button></div>
-            <div class="downloadCard"><strong>My AI Writing Guide</strong><p>A plain-language guide you can give to ChatGPT, Claude, Gemini, or another AI tool.</p><button data-download disabled class="btn primary full" onclick="downloadPDF('ai')">Download my AI guide</button></div>
-            <div class="downloadCard"><strong>My Content Starter Map</strong><p>Ideas for what to talk about based on your beliefs, audience, stories, and themes.</p><button data-download disabled class="btn primary full" onclick="downloadPDF('content')">Download my content map</button></div>
-            <div class="downloadCard"><strong>Printable Brand Summary</strong><p>A clean summary you can print, save as PDF, or keep beside you while creating.</p><button data-download disabled class="btn secondary full" onclick="window.print()">Print / save a copy</button></div>
+          <div class="downloadAll">
+            <div>
+              <strong>Download My Complete Brand Kit</strong>
+              <p>One ZIP with 5 personalized PDFs plus a START HERE guide explaining what each file is for and how to use it.</p>
+            </div>
+            <button data-download disabled class="btn big" style="background:#fff;color:#74586f" onclick="downloadEverything()">Download my Brand Kit</button>
           </div>
-          <div class="downloadAll"><div><strong>Everything in one download</strong><p>Your five personalized brand files, neatly packaged together.</p></div><button data-download disabled class="btn big" style="background:#fff;color:#74586f" onclick="downloadEverything()">Download everything</button></div>
-          <div class="saveNote">✓ Progress saves automatically on this device</div>
+
+          <div class="downloadTitle" style="font-size:18px">What is inside?</div>
+          <div class="downloads">
+            <div class="downloadCard"><strong>01 · My Brand Guide — PDF</strong><p>Your complete brand foundation: audience, beliefs, message, positioning, and the decisions that keep your brand consistent.</p><p><b>Use it for:</b> your website, briefing a designer or marketer, and checking whether something feels on-brand.</p><button data-download disabled class="btn secondary full" onclick="downloadPDF('brand')">Download this file only</button></div>
+            <div class="downloadCard"><strong>02 · My Brand Voice Guide — PDF</strong><p>How you naturally communicate, the language that sounds like you, and the styles you want to avoid.</p><p><b>Use it for:</b> emails, social posts, presentations, website copy, or anyone writing on your behalf.</p><button data-download disabled class="btn secondary full" onclick="downloadPDF('voice')">Download this file only</button></div>
+            <div class="downloadCard"><strong>03 · My Canva Brand Plan — PDF</strong><p>Your visual direction, colors, fonts, image style, Canva setup, and practical next steps.</p><p><b>Use it for:</b> building your Canva Brand Kit, Brand Home, mood board, and reusable templates.</p><button data-download disabled class="btn secondary full" onclick="downloadPDF('canva')">Download this file only</button></div>
+            <div class="downloadCard"><strong>04 · My AI Writing Guide — PDF</strong><p>Your brand information organized so an AI assistant has real context about your voice, audience, beliefs, and boundaries.</p><p><b>Use it for:</b> ChatGPT, Claude, Gemini, or another AI tool when you want help creating without losing your voice.</p><button data-download disabled class="btn secondary full" onclick="downloadPDF('ai')">Download this file only</button></div>
+            <div class="downloadCard"><strong>05 · My Content Starter Map — PDF</strong><p>Personalized directions for what you can teach, share, explain, challenge, and talk about.</p><p><b>Use it for:</b> those moments when you do not know what to post, write, teach, or create next.</p><button data-download disabled class="btn secondary full" onclick="downloadPDF('content')">Download this file only</button></div>
+            <div class="downloadCard"><strong>Printable Brand Summary</strong><p>A quick copy of the full experience you can print or save from your browser.</p><p><b>Use it for:</b> keeping a reference beside you while you create or review your work.</p><button data-download disabled class="btn secondary full" onclick="window.print()">Print / save a copy</button></div>
+          </div>
+
+          <div class="saveNote">✓ Your downloads are created from the answers in your current private session</div>
           <div class="footerNav"><button class="btn secondary" onclick="go(7)">← Back</button><button class="btn sage" onclick="go(0)">Review from the beginning</button></div>
         </div>
       </section>
