@@ -49,9 +49,14 @@ Promise.all(panelFiles.map(f=>fetch(f).then(r=>{if(!r.ok) throw new Error(`Could
       mobile.src='mobile-nav.js';
       document.body.appendChild(mobile);
 
-      const downloads=document.createElement('script');
-      downloads.src='downloads.js';
-      document.body.appendChild(downloads);
+      const pdfBranding=document.createElement('script');
+      pdfBranding.src='pdf-branding.js';
+      pdfBranding.onload=()=>{
+        const downloads=document.createElement('script');
+        downloads.src='downloads.js';
+        document.body.appendChild(downloads);
+      };
+      document.body.appendChild(pdfBranding);
     };
     document.body.appendChild(app);
   })
