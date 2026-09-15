@@ -4,10 +4,10 @@
     'Find Your Center',
     'Who You’re Here For',
     'Find Your Voice',
-    'Choose Your Look',
-    'Build It in Canva',
+    'Choose Your Visual Direction',
     'Shape Your Message',
     'Create With AI',
+    'Put It Into Practice',
     'Meet Your Personal Brand'
   ];
   const LAST_STEP_KEY='yourbrand_last_step_v1';
