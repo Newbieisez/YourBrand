@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600;1,700&display=swap');
+
+:root{
+  --brand-font:'Montserrat',Arial,sans-serif;
+}
+
+html,body,button,input,textarea,select{
+  font-family:var(--brand-font)!important;
+}
+
+.hero h1,
+.card h2,
+.brand-guide h3,
+.softTitle,
+.quote,
+.oceanNote h3,
+.reveal .name,
+.revealCard span,
+.downloadTitle,
+.downloadAll strong,
+.site-footer-brand strong,
+.legal-brand,
+.legal-card h1,
+.legal-card h2,
+.mobile-brand-lockup strong{
+  font-family:var(--brand-font)!important;
+}
+
+.hero h1,
+.card h2,
+.reveal .name,
+.downloadTitle,
+.legal-card h1,
+.legal-card h2,
+.mobile-brand-lockup strong{
+  font-weight:700;
+  letter-spacing:-0.025em;
+}
+
+.brand-guide h3,
+.softTitle,
+.oceanNote h3,
+.downloadAll strong,
+.site-footer-brand strong,
+.legal-brand{
+  font-weight:700;
+}
+
+.revealCard span{
+  font-weight:600;
+}
+
+.quote{
+  font-weight:500;
+}
